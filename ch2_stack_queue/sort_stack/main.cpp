@@ -32,9 +32,12 @@ void sort(stack<int> &st, stack<int> &st2, int size) {
     sort(st, st2, size + 1);
 
 }
-
 void sort(stack<int> &st, stack<int> &st2) {
     sort(st, st2, 0);
+}
+
+void sort2(stack<int> &st, stack<int> &st2) {
+
 }
 
 int main() {
@@ -47,7 +50,7 @@ int main() {
     st.push(4);
     st.push(1);
 
-    sort(st, st2);
+    sort2(st, st2);
 
     cout << "st2: ";
     while (!st2.empty()) {
