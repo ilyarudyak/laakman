@@ -10,11 +10,13 @@
 class Animal {
 
 public:
-    Animal(std::string name);
+    Animal(std::string type, std::string name);
     ~Animal();
     std::string getName();
+    std::string getType();
 
 private:
+    std::string type;
     std::string name;
 };
 
