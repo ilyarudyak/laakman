@@ -1,8 +1,10 @@
 #include <iostream>
-
+#include "Animal.h"
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
+
+    Animal dog("dog");
+    cout << dog.getName() << endl;
     return 0;
 }
