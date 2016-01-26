@@ -2,6 +2,20 @@
 #include <stack>
 using namespace std;
 
+void printStack(stack<int> st) {
+    cout << "st: ";
+    if (st.empty()) {
+        cout << "empty" << endl;
+        return;
+    }
+
+    while (!st.empty()) {
+        cout << st.top() << " ";
+        st.pop();
+    }
+    cout << endl;
+}
+
 void sort(stack<int> &st, stack<int> &st2, int size) {
 
     if (st.empty()) {
@@ -36,28 +50,47 @@ void sort(stack<int> &st, stack<int> &st2) {
     sort(st, st2, 0);
 }
 
-void sort2(stack<int> &st, stack<int> &st2) {
+/* here we implement an idea from solution:
+ * suppose we have elements in sorted order
+ * in the right stack. we take top element
+ * from left and find a place for it in
+ * right stack (we move elements to the left
+ * while doing this).
+ */
+void sort2(stack<int> &left, stack<int> &right, int ltop) {
 
+    if (right.top() < ltop) {
+        right.push(ltop);
+    } else {
+        left.push(right.top());
+        right.pop();
+        sort2(left, right, ltop);
+    }
+}
+
+void sort2(stack<int> &left, stack<int> &right) {
+    while (!left.empty()) {
+        int ltop = left.top();
+        left.pop();
+        sort2(left, right, ltop);
+    }
 }
 
 int main() {
 
-    stack<int> st;
-    stack<int> st2;
-    st.push(3);
-    st.push(5);
-    st.push(2);
-    st.push(4);
-    st.push(1);
+    stack<int> left, right;
+    left.push(7);
+    left.push(10);
+    left.push(5);
+    right.push(1);
+    right.push(3);
+    right.push(8);
+    right.push(12);
 
-    sort2(st, st2);
+    sort2(left, right);
 
-    cout << "st2: ";
-    while (!st2.empty()) {
-        cout << st2.top() << " ";
-        st2.pop();
-    }
-    cout << endl;
+    printStack(left);
+    printStack(right);
 
     return 0;
 }
