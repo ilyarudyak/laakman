@@ -41,7 +41,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         return height(root);
     }
     private int height(Node x) {
-        if (x == null) { return 0; }
+        if (x == null) { return -1; }
         return Math.max(height(x.left), height(x.right)) + 1;
     }
 
@@ -179,12 +179,27 @@ public class BST<Key extends Comparable<Key>, Value> {
         buildFromSortedArray(sortedArray, i, med);
         buildFromSortedArray(sortedArray, med + 1, j);
     }
+    public void buildFromSortedArray2(Key[] sortedArray) {
+        root = buildFromSortedArray2(root, sortedArray, 0, sortedArray.length);
+    }
+    public Node buildFromSortedArray2(Node x, Key[] sortedArray, int i, int j) {
+
+        if (i >= j) {
+            return null;
+        }
+
+        int med = (i + j) / 2;
+        x = put(x, sortedArray[med], null);
+        x.left = buildFromSortedArray2(x.left, sortedArray, i, med);
+        x.right = buildFromSortedArray2(x.right, sortedArray, med + 1, j);
+        return x;
+    }
 
     public static void main(String[] args) throws FileNotFoundException {
 
         BST<String, Integer> bst = new BST<>();
         String[] sortedArray = {"A", "B", "C", "D", "E", "F", "G"};
-        bst.buildFromSortedArray(sortedArray);
+        bst.buildFromSortedArray2(sortedArray);
         bst.printByLevels();
     }
 }
