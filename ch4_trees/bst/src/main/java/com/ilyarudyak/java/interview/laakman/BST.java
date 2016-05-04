@@ -28,7 +28,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // ----------------- utility ------------------------
 
-    // return number of key-value pairs in com.ilyarudyak.java.interview.laakman.BST rooted at x
+    // return number of key-value pairs in BST rooted at x
     public int size() {
         return size(root);
     }
@@ -163,8 +163,44 @@ public class BST<Key extends Comparable<Key>, Value> {
 
     // ----------------- problems ------------------------
 
-    // 4.2 build tree with min height from sorted array
+    // it seems - the main idea not to use standard methods
+    // (put(), height() etc. ) but to augment them
+
+    // 4.1 check if tree (BT, not BST) is balanced
+    // this is O(N^2) and is ineffective (multiple calls to height)
+    private boolean isBalanced() {
+        return isBalanced(root) && isBalanced(root.left) && isBalanced(root.right);
+    }
+    private boolean isBalanced(Node x) {
+        if (x == null) { return true; }
+        return Math.abs(height(x.left) - height(x.right)) <= 1;
+    }
+
+    // this is an efficient implementation O(N)
+    // we check balance inside height
+    private boolean isBalanced2() {
+        if (getHeight(root) == -1) { return false; }
+        return true;
+    }
+    private int getHeight(Node x) {
+
+        if (x == null) { return 0; }
+
+        int lh = getHeight(x.left);
+        if (lh == -1) { return -1; }
+
+        int rh = getHeight(x.right);
+        if (rh == -1) { return -1; }
+
+        if (Math.abs(lh - rh) > 1) { return -1; }
+
+        return Math.max(lh, rh) + 1;
+    }
+
+
+    // 4.3 build tree with min height from sorted array
     // idea: take median each time
+    // here we just use put() but this is ineffective
     public void build0(Key[] sortedArray) {
         build0(sortedArray, 0, sortedArray.length);
     }
@@ -180,6 +216,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         build0(sortedArray, med + 1, j);
     }
 
+    // and here we actually build tree top-down
     public void build(Key[] keys) {
         root = build(keys, 0, keys.length);
     }
@@ -220,6 +257,7 @@ public class BST<Key extends Comparable<Key>, Value> {
         x.right = build2(pre, i, i, high);
         return x;
     }
+    // this is like build2 but without index
     public Node build3(Key[] pre, int low, int high) {
 
         if (low >= pre.length || low > high) { return null; }
@@ -237,12 +275,17 @@ public class BST<Key extends Comparable<Key>, Value> {
         return x;
     }
 
+    // 4.4 level-by-level traversal
+
+
+
     public static void main(String[] args) throws FileNotFoundException {
 
-        BST<String, Integer> bst = new BST<>();
-        String[] keys = {"S", "E", "A", "C", "R", "H", "M", "L", "P", "X"};
-        bst.build2(keys);
-        bst.printByLevels();
+        BST<String, Integer> bstNotBal = buildSampleBST();
+        BST<String, Integer> bstBal = buildBalancedBST();
+
+        System.out.println("not balanced " + bstNotBal.isBalanced() + " " + bstNotBal.isBalanced2());
+        System.out.println("balanced " + bstBal.isBalanced() + " " + bstBal.isBalanced2());
     }
 }
 
