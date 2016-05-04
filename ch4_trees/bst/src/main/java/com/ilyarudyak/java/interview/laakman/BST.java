@@ -2,9 +2,7 @@ package com.ilyarudyak.java.interview.laakman;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by ilyarudyak on 5/3/16.
@@ -276,16 +274,71 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
 
     // 4.4 level-by-level traversal
+    // using BFS
+    public void levelByLevel() {
 
+        Map<Node, Integer> distTo = new HashMap<>();
+//        Map<Node, Boolean>  marked = new HashMap<>();
 
+        Queue<Node> q = new LinkedList<>();
+
+        distTo.put(root, 0);
+//        marked.put(root, true);
+        q.add(root);
+        System.out.print("level0: " + root.key);
+
+        int level = 0;
+
+        while (!q.isEmpty()) {
+            Node v = q.remove();
+
+            List<Node> children = Arrays.asList(v.left, v.right);
+            for (Node w : children) {
+                if (w != null /*&& !marked.containsKey(w)*/) {
+                    distTo.put(w, distTo.get(v) + 1);
+//                    marked.put(w, true);
+                    q.add(w);
+
+                    if (distTo.get(w) > level) {
+                        level++;
+                        System.out.println();
+                        System.out.print("level" + level + ": ");
+                    }
+                    System.out.print(w.key + " ");
+                }
+            }
+
+        }
+        System.out.println();
+    }
+    private void levelByLevelRec() {
+        int h = height(root);
+        int i;
+        for (i=0; i<=h; i++) {
+            System.out.print("level" + i + ": ");
+            levelByLevelRec(root, i);
+            System.out.println();
+        }
+    }
+    public void levelByLevelRec(Node x ,int level) {
+        if (x == null)
+            return;
+        if (level == 0)
+            System.out.print(x.key + " ");
+        else if (level > 0) {
+            levelByLevelRec(x.left, level-1);
+            levelByLevelRec(x.right, level-1);
+        }
+    }
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        BST<String, Integer> bstNotBal = buildSampleBST();
-        BST<String, Integer> bstBal = buildBalancedBST();
+        BST<String, Integer> bst = buildSampleBST();
+        bst.levelByLevel();
+        System.out.println();
+        bst.levelByLevelRec();
 
-        System.out.println("not balanced " + bstNotBal.isBalanced() + " " + bstNotBal.isBalanced2());
-        System.out.println("balanced " + bstBal.isBalanced() + " " + bstBal.isBalanced2());
+
     }
 }
 
