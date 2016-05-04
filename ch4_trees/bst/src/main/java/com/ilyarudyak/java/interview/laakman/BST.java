@@ -196,11 +196,52 @@ public class BST<Key extends Comparable<Key>, Value> {
         return x;
     }
 
+    // princeton web 2 Given the pre-order traversal of a BST
+    // (not including null nodes), reconstruct the tree.
+    // This is O(N^2) method TODO add O(n) method
+    public void build2(Key[] pre) {
+//        root = build2(pre, 0, 0, pre.length - 1);
+        root = build3(pre, 0, pre.length - 1);
+    }
+    public Node build2(Key[] pre, int index, int low, int high) {
+
+        if (index >= pre.length || low > high) { return null; }
+
+        Node x = new Node(pre[index], null, 0);
+        index++;
+        if (low == high) { return x; }
+
+        int i;
+        for ( i = low; i <= high; ++i ) {
+            if (pre[i].compareTo(x.key) > 0) { break; }
+        }
+
+        x.left = build2(pre, index, index, i - 1);
+        x.right = build2(pre, i, i, high);
+        return x;
+    }
+    public Node build3(Key[] pre, int low, int high) {
+
+        if (low >= pre.length || low > high) { return null; }
+
+        Node x = new Node(pre[low], null, 0);
+//        if (low == high) { return x; }
+
+        int i;
+        for ( i = low; i <= high; ++i ) {
+            if (pre[i].compareTo(x.key) > 0) { break; }
+        }
+
+        x.left = build3(pre, low + 1, i - 1);
+        x.right = build3(pre, i, high);
+        return x;
+    }
+
     public static void main(String[] args) throws FileNotFoundException {
 
         BST<String, Integer> bst = new BST<>();
-        String[] sortedArray = {"A", "B", "C", "D", "E", "F", "G"};
-        bst.build(sortedArray);
+        String[] keys = {"S", "E", "A", "C", "R", "H", "M", "L", "P", "X"};
+        bst.build2(keys);
         bst.printByLevels();
     }
 }
