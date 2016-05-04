@@ -18,10 +18,10 @@ public class BSTTest {
     }
 
     @Test
-    public void testBuildFromSortedArray() throws Exception {
+    public void testBuild0() throws Exception {
 
         String[] sortedArray = {"A", "B", "C", "D", "E", "F", "G"};
-        bst.buildFromSortedArray(sortedArray);
+        bst.build0(sortedArray);
         assertEquals(7, bst.size());
         assertEquals(2, bst.height());
         assertEquals(1, bst.path("B"));
@@ -29,10 +29,10 @@ public class BSTTest {
     }
 
     @Test
-    public void testBuildFromSortedArray2() throws Exception {
+    public void testBuild() throws Exception {
 
         String[] sortedArray = {"A", "B", "C", "D", "E", "F", "G"};
-        bst.buildFromSortedArray2(sortedArray);
+        bst.build(sortedArray);
 //        assertEquals(7, bst.size());
         assertEquals(2, bst.height());
         assertEquals(1, bst.path("B"));

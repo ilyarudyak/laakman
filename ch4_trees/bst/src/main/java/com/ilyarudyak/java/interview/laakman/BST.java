@@ -161,14 +161,14 @@ public class BST<Key extends Comparable<Key>, Value> {
         return bst;
     }
 
-    // ----------------- problems -----------------------
+    // ----------------- problems ------------------------
 
     // 4.2 build tree with min height from sorted array
     // idea: take median each time
-    public void buildFromSortedArray(Key[] sortedArray) {
-        buildFromSortedArray(sortedArray, 0, sortedArray.length);
+    public void build0(Key[] sortedArray) {
+        build0(sortedArray, 0, sortedArray.length);
     }
-    public void buildFromSortedArray(Key[] sortedArray, int i, int j) {
+    public void build0(Key[] sortedArray, int i, int j) {
 
         if (i >= j) {
             return;
@@ -176,22 +176,23 @@ public class BST<Key extends Comparable<Key>, Value> {
 
         int med = (i + j) / 2;
         put(sortedArray[med], null);
-        buildFromSortedArray(sortedArray, i, med);
-        buildFromSortedArray(sortedArray, med + 1, j);
+        build0(sortedArray, i, med);
+        build0(sortedArray, med + 1, j);
     }
-    public void buildFromSortedArray2(Key[] sortedArray) {
-        root = buildFromSortedArray2(root, sortedArray, 0, sortedArray.length);
+
+    public void build(Key[] keys) {
+        root = build(keys, 0, keys.length);
     }
-    public Node buildFromSortedArray2(Node x, Key[] sortedArray, int i, int j) {
+    public Node build(Key[] keys, int i, int j) {
 
         if (i >= j) {
             return null;
         }
 
         int med = (i + j) / 2;
-        x = put(x, sortedArray[med], null);
-        x.left = buildFromSortedArray2(x.left, sortedArray, i, med);
-        x.right = buildFromSortedArray2(x.right, sortedArray, med + 1, j);
+        Node x = new Node(keys[med], null, 0);
+        x.left = build(keys, i, med);
+        x.right = build(keys, med + 1, j);
         return x;
     }
 
@@ -199,7 +200,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
         BST<String, Integer> bst = new BST<>();
         String[] sortedArray = {"A", "B", "C", "D", "E", "F", "G"};
-        bst.buildFromSortedArray2(sortedArray);
+        bst.build(sortedArray);
         bst.printByLevels();
     }
 }
