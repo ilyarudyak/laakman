@@ -7,7 +7,7 @@ apply plugin: 'application'
 //mainClassName = "stack.StackWithMin"
 //mainClassName = "stack.Hanoi"
 //mainClassName = "stack.StackSort"
-mainClassName = "queue.Queue"
+mainClassName = "queue.Animals"
 
 
 repositories {
