@@ -3,10 +3,10 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'application'
 
-//mainClassName = "com.ilyarudyak.java.interview.Stack"
-//mainClassName = "com.ilyarudyak.java.interview.StackWithMin"
-//mainClassName = "com.ilyarudyak.java.interview.Hanoi"
-mainClassName = "com.ilyarudyak.java.interview.StackSort"
+//mainClassName = "stack.Stack"
+//mainClassName = "stack.StackWithMin"
+//mainClassName = "stack.Hanoi"
+mainClassName = "stack.StackSort"
 
 
 repositories {

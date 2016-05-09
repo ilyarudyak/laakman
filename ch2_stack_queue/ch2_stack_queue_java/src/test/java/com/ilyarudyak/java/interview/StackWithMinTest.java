@@ -2,6 +2,7 @@ package com.ilyarudyak.java.interview;
 
 import org.junit.Before;
 import org.junit.Test;
+import stack.StackWithMin;
 
 import java.util.Random;
 

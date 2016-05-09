@@ -1,6 +1,5 @@
-package com.ilyarudyak.java.interview;
+package stack;
 
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Random;
 

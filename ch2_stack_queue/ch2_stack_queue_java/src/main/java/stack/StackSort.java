@@ -1,4 +1,4 @@
-package com.ilyarudyak.java.interview;
+package stack;
 
 import java.util.Random;
 

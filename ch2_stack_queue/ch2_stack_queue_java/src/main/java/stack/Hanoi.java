@@ -1,4 +1,4 @@
-package com.ilyarudyak.java.interview;
+package stack;
 
 /**
  * Created by ilyarudyak on 5/9/16.
