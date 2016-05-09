@@ -44,6 +44,11 @@ public class Stack<Item> {
         size--;
         return item;
     }
+    public Item peek() {
+        if (isEmpty()) throw new NoSuchElementException("stack is empty");
+        Item item = first.item;
+        return item;
+    }
 
     // utility functions
     public boolean isEmpty() {
@@ -51,6 +56,14 @@ public class Stack<Item> {
     }
     public int size() {
         return size;
+    }
+    public void show() {
+        Node cur = first;
+        while (cur != null) {
+            System.out.print(cur.item + " ");
+            cur = cur.next;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
