@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2949f55-5b21-407b-9123-484954ab886e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackWithMin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/StackWithMinTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java" />
     </list>
     <ignored path="ch2_stack_queue_java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,17 +33,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5135135">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="68" selection-end-column="5" />
               <folding>
                 <element signature="docComment;class#Stack#0" expanded="false" />
+                <element signature="class#Node#0;class#Stack#0" expanded="false" />
                 <element signature="method#Stack#0;class#Stack#0" expanded="false" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
+                <element signature="method#push#0;class#Stack#0" expanded="false" />
+                <element signature="method#pop#0;class#Stack#0" expanded="false" />
+                <element signature="method#main#0;class#Stack#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackWithMin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackWithMin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="docComment;class#StackWithMin#0" expanded="false" />
+                <element signature="class#Node#0;class#StackWithMin#0" expanded="false" />
+                <element signature="method#StackWithMin#0;class#StackWithMin#0" expanded="false" />
+                <element signature="method#push#0;class#StackWithMin#0" expanded="false" />
+                <element signature="method#pop#0;class#StackWithMin#0" expanded="false" />
+                <element signature="method#min#0;class#StackWithMin#0" expanded="false" />
+                <element signature="method#main#0;class#StackWithMin#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackWithMinTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/StackWithMinTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4054054">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,6 +84,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -255,7 +284,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2925583223000" />
+        <entry key="$PROJECT_DIR$" value="2925585557000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -350,8 +379,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackWithMin.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/StackWithMinTest.java" />
       </list>
     </option>
   </component>
@@ -488,6 +519,15 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ilyarudyak.java.interview" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -802,24 +842,50 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#Stack#0" expanded="false" />
+            <element signature="class#Node#0;class#Stack#0" expanded="false" />
+            <element signature="method#Stack#0;class#Stack#0" expanded="false" />
+            <element signature="method#push#0;class#Stack#0" expanded="false" />
+            <element signature="method#pop#0;class#Stack#0" expanded="false" />
+            <element signature="method#main#0;class#Stack#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21621622">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.1891892">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackWithMin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5135135">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="docComment;class#Stack#0" expanded="false" />
-            <element signature="method#Stack#0;class#Stack#0" expanded="false" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="docComment;class#StackWithMin#0" expanded="false" />
+            <element signature="class#Node#0;class#StackWithMin#0" expanded="false" />
+            <element signature="method#StackWithMin#0;class#StackWithMin#0" expanded="false" />
+            <element signature="method#push#0;class#StackWithMin#0" expanded="false" />
+            <element signature="method#pop#0;class#StackWithMin#0" expanded="false" />
+            <element signature="method#min#0;class#StackWithMin#0" expanded="false" />
+            <element signature="method#main#0;class#StackWithMin#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ilyarudyak/java/interview/StackWithMinTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4054054">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
