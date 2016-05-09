@@ -1,5 +1,6 @@
 package com.ilyarudyak.java.interview;
 
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
@@ -54,12 +55,25 @@ public class StackWithMin<Item extends Comparable<Item>> {
 
     // utility functions
     public Item min() {
-        if (isEmpty()) return null;
+        if (isEmpty()) { return null; }
         if (first.item.compareTo(first.minBelow) < 0) {
             return first.item;
         } else {
             return first.minBelow;
         }
+    }
+    public Item minIter() {
+        if (isEmpty()) { return null; }
+        Item min = first.item;
+        Node<Item> cur = first.next;
+        while (cur != null) {
+            Item tmp = cur.item;
+            if (tmp.compareTo(min) < 0) {
+                min = tmp;
+            }
+            cur = cur.next;
+        }
+        return min;
     }
     public boolean isEmpty() {
         return first == null;
