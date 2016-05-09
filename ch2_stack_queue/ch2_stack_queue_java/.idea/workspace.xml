@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2949f55-5b21-407b-9123-484954ab886e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackSort.java" afterPath="$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackSort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../towers/main.cpp" afterPath="$PROJECT_DIR$/../towers/main.cpp" />
     </list>
     <ignored path="ch2_stack_queue_java.iws" />
@@ -37,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding>
                 <element signature="docComment;class#Stack#0" expanded="false" />
                 <element signature="class#Node#0;class#Stack#0" expanded="false" />
@@ -52,11 +50,12 @@
       <file leaf-file-name="StackSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5071542">
-              <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.23688394">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="2" selection-end-line="72" selection-end-column="35" />
               <folding>
                 <element signature="docComment;class#StackSort#0" expanded="false" />
                 <element signature="method#StackSort#0;class#StackSort#0" expanded="false" />
+                <element signature="method#getMin#0;class#StackSort#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -878,7 +877,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding>
             <element signature="docComment;class#Stack#0" expanded="false" />
             <element signature="class#Node#0;class#Stack#0" expanded="false" />
@@ -891,11 +890,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ilyarudyak/java/interview/StackSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5071542">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.23688394">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="2" selection-end-line="72" selection-end-column="35" />
           <folding>
             <element signature="docComment;class#StackSort#0" expanded="false" />
             <element signature="method#StackSort#0;class#StackSort#0" expanded="false" />
+            <element signature="method#getMin#0;class#StackSort#0" expanded="false" />
           </folding>
         </state>
       </provider>

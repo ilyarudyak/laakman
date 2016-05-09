@@ -26,7 +26,6 @@ public class StackSort {
         }
         System.out.println();
     }
-
     private int getMin() {
 
         int min = N, count = 0;
@@ -54,6 +53,20 @@ public class StackSort {
         return min;
     }
 
+    // this is sort from solution
+    public void sort2() {
+        while (!B.isEmpty()) {
+            int tmpB = B.pop();
+
+            while (true) {
+                if (A.isEmpty()) { A.push(tmpB); break; }
+                if (A.peek() > tmpB) { B.push(A.pop()); }
+                else { A.push(tmpB); break; }
+            }
+
+        }
+    }
+
     public static void main(String[] args) {
 
         Random random = new Random(0);
@@ -64,7 +77,7 @@ public class StackSort {
 
         ss.B.show();
 
-        ss.sort();
+        ss.sort2();
         ss.A.show();
     }
 }
