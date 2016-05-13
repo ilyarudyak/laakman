@@ -4,11 +4,27 @@ using namespace std;
 
 int main() {
 
-    LinkedList<int> list;
-    for (int i = 0; i < 10; ++i) {
-        list.addFront(i);
-    }
-    list.show();
+
+    // 2.7 check if LL is palindrome
+    // create second list and reverse it
+//    LinkedList<int> list;
+//    list.addFront(0);
+//    list.addFront(1);
+//    list.addFront(2);
+//    list.addFront(1);
+//    list.addFront(0);
+//    list.show();
+//
+//    LinkedList<int> list2;
+//    list2.addFront(0);
+//    list2.addFront(1);
+//    list2.addFront(2);
+//    list2.addFront(4);
+//    list2.addFront(0);
+//    list2.show();
+//    list2.reverse();
+//
+//    cout << (list == list2) << endl;
 
     return 0;
 }
