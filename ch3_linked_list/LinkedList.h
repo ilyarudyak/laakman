@@ -30,6 +30,11 @@ public:
     // 2.1 remove duplicates using set
     void removeDup();
 
+    // 2.3 remove node given pointer to it
+    // (not previous) - override this element with next
+    // remove n-th node from the beginning
+    void remove(int n);
+
     // 2.5 add 2 LL 7 -> 1 -> 6 and 5 -> 9 -> 2
     // 612 + 295 = 912, 2 -> 1 -> 9
     void sum(LinkedList<T> &list1, LinkedList<T> &list2);
@@ -187,6 +192,23 @@ template <typename T> void LinkedList<T>::removeDup() {
             cur = cur->next;
         }
     }
+}
+
+template <typename T> void LinkedList<T>::remove(int n) {
+
+    // method doesn't work for the last element
+    if (n >= size() - 1) { return; }
+
+    Node<T> *cur = head;
+    // advance cur for n positions
+    for (int i = 0; i < n; ++i, cur = cur->next) { }
+
+    Node<T> *tmp = cur->next;
+    cur->data = cur->next->data;
+    cur->next = cur->next->next;
+    delete tmp;
+
+
 }
 
 

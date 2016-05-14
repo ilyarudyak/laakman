@@ -6,15 +6,26 @@ using namespace std;
 int main() {
 
     // 2.1 remove duplicates from unsorted list
+//    LinkedList<int> list;
+//    list.addFront(3);
+//    list.addFront(2); list.addFront(2); list.addFront(2);
+//    list.addFront(1); list.addFront(1);
+//    list.show();
+//
+//    list.removeDup();
+//    list.show();
+
+
+    // 2.3 remove node given pointer to it
+    // (not previous) - override this element with next
+    // remove n-th node from the beginning
     LinkedList<int> list;
-    list.addFront(3);
-    list.addFront(2); list.addFront(2); list.addFront(2);
-    list.addFront(1); list.addFront(1);
+    list.addFront(4); list.addFront(3); list.addFront(2);
+    list.addFront(1); list.addFront(0);
     list.show();
 
-    list.removeDup();
+    list.remove(3);
     list.show();
-
 
 
     // 2.5 add 2 LL 7 -> 1 -> 6 and 5 -> 9 -> 2
