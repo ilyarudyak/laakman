@@ -5,16 +5,33 @@ using namespace std;
 
 int main() {
 
-    // 2.7 using stack
+    // 2.5 add 2 LL 7 -> 1 -> 6 and 5 -> 9 -> 2
+    // 612 + 295 = 912, 2 -> 1 -> 9
+    LinkedList<int> list1;
+    list1.addFront(6); list1.addFront(1); list1.addFront(7);
+    list1.show();
+
+    LinkedList<int> list2;
+    list2.addFront(2); list2.addFront(9); list2.addFront(5);
+    list2.show();
+
     LinkedList<int> list;
-    list.addFront(0);
-    list.addFront(1);
-    list.addFront(2);
-    list.addFront(1);
-    list.addFront(0);
+    list.sum(list1, list2);
+    list.reverse();
     list.show();
 
-    cout << list.isPalindrome() << endl;
+
+
+    // 2.7 using stack
+//    LinkedList<int> list;
+//    list.addFront(0);
+//    list.addFront(1);
+//    list.addFront(2);
+//    list.addFront(1);
+//    list.addFront(0);
+//    list.show();
+//
+//    cout << list.isPalindrome() << endl;
 
     // 2.7 check if LL is palindrome
     // create second list and reverse it

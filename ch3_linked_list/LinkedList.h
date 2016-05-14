@@ -26,6 +26,10 @@ public:
 
     void show();
 
+    // 2.5 add 2 LL 7 -> 1 -> 6 and 5 -> 9 -> 2
+    // 612 + 295 = 912, 2 -> 1 -> 9
+    void sum(LinkedList<T> &list1, LinkedList<T> &list2);
+
     // 2.7 check if LL is palindrome
     void reverse();
     bool operator==(LinkedList<T> &other);
@@ -140,6 +144,22 @@ template <typename T> bool LinkedList<T>::isPalindrome() {
     }
 
     return true;
+}
+
+template <typename T> void LinkedList<T>::sum(LinkedList<T> &list1, LinkedList<T> &list2) {
+
+    int carry = 0, sum;
+    Node<T> *cur1 = list1.head;
+    Node<T> *cur2 = list2.head;
+    for (; cur1 != nullptr, cur2 != nullptr;
+           cur1 = cur1->next, cur2 = cur2->next) {
+        sum = (cur1->data + cur2->data) % 10;
+        addFront(sum + carry);
+        carry = (cur1->data + cur2->data) / 10;
+    }
+    if (carry > 0) {
+        addFront(carry);
+    }
 }
 
 

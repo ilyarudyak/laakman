@@ -12,12 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00e8c1b0-d5f8-4956-b060-07cec3380383" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Stack.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ch2_stack_queue/towers/main.cpp" afterPath="$PROJECT_DIR$/../ch2_stack_queue/towers/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ch3_linked_list.iml" afterPath="$PROJECT_DIR$/.idea/ch3_linked_list.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LinkedList.h" afterPath="$PROJECT_DIR$/LinkedList.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
@@ -43,8 +40,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="162">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -55,36 +52,22 @@
       <file leaf-file-name="LinkedList.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LinkedList.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
+            <state relative-caret-position="327">
+              <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
               <folding>
                 <element signature="e#0#2#0" expanded="false" />
                 <element signature="e#120#139#0" expanded="true" />
-                <element signature="e#203#246#1" expanded="false" />
-                <element signature="e#658#742#0" expanded="false" />
-                <element signature="e#743#850#0" expanded="false" />
-                <element signature="e#852#939#0" expanded="false" />
-                <element signature="e#940#1011#0" expanded="false" />
-                <element signature="e#1013#1148#0" expanded="false" />
-                <element signature="e#1149#1377#0" expanded="false" />
-                <element signature="e#1378#1547#0" expanded="false" />
-                <element signature="e#1549#1839#0" expanded="false" />
-                <element signature="e#1841#2134#0" expanded="false" />
-                <element signature="e#2135#2518#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stack.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stack.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#2#0" expanded="false" />
-                <element signature="e#397#582#0" expanded="false" />
-                <element signature="e#583#800#0" expanded="false" />
+                <element signature="e#752#836#0" expanded="false" />
+                <element signature="e#837#944#0" expanded="false" />
+                <element signature="e#946#1033#0" expanded="false" />
+                <element signature="e#1034#1105#0" expanded="false" />
+                <element signature="e#1107#1242#0" expanded="false" />
+                <element signature="e#1243#1471#0" expanded="false" />
+                <element signature="e#1472#1641#0" expanded="false" />
+                <element signature="e#1643#1933#0" expanded="false" />
+                <element signature="e#1935#2228#0" expanded="false" />
+                <element signature="e#2229#2612#0" expanded="false" />
+                <element signature="e#2613#3093#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -98,6 +81,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Node.h" />
         <option value="$PROJECT_DIR$/Stack.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/LinkedList.h" />
@@ -376,22 +360,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Stack.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#397#582#0" expanded="false" />
-            <element signature="e#583#800#0" expanded="false" />
+            <element signature="e#110#127#0" expanded="true" />
+            <element signature="e#565#782#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -400,22 +392,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkedList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="130" column="24" selection-start-line="130" selection-start-column="24" selection-end-line="130" selection-end-column="24" />
+        <state relative-caret-position="327">
+          <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
             <element signature="e#120#139#0" expanded="true" />
-            <element signature="e#203#246#1" expanded="false" />
-            <element signature="e#658#742#0" expanded="false" />
-            <element signature="e#743#850#0" expanded="false" />
-            <element signature="e#852#939#0" expanded="false" />
-            <element signature="e#940#1011#0" expanded="false" />
-            <element signature="e#1013#1148#0" expanded="false" />
-            <element signature="e#1149#1377#0" expanded="false" />
-            <element signature="e#1378#1547#0" expanded="false" />
-            <element signature="e#1549#1839#0" expanded="false" />
-            <element signature="e#1841#2134#0" expanded="false" />
-            <element signature="e#2135#2518#0" expanded="false" />
+            <element signature="e#752#836#0" expanded="false" />
+            <element signature="e#837#944#0" expanded="false" />
+            <element signature="e#946#1033#0" expanded="false" />
+            <element signature="e#1034#1105#0" expanded="false" />
+            <element signature="e#1107#1242#0" expanded="false" />
+            <element signature="e#1243#1471#0" expanded="false" />
+            <element signature="e#1472#1641#0" expanded="false" />
+            <element signature="e#1643#1933#0" expanded="false" />
+            <element signature="e#1935#2228#0" expanded="false" />
+            <element signature="e#2229#2612#0" expanded="false" />
+            <element signature="e#2613#3093#0" expanded="false" />
           </folding>
         </state>
       </provider>
