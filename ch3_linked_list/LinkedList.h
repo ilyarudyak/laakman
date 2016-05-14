@@ -6,12 +6,10 @@
 #define CH3_LINKED_LIST_LINKEDLIST_H
 
 #include <iostream>
+#include "Node.h"
+#include "Stack.h"
 using namespace std;
 
-template <typename T> struct Node {
-    T data;
-    Node* next;
-};
 
 template <typename T> class LinkedList {
 
@@ -31,6 +29,7 @@ public:
     // 2.7 check if LL is palindrome
     void reverse();
     bool operator==(LinkedList<T> &other);
+    bool isPalindrome();
 
 
 private:
@@ -104,7 +103,6 @@ template <typename T> void LinkedList<T>::reverse() {
 
     head = prev;
 }
-
 template <typename T> bool LinkedList<T>::operator==(LinkedList<T> &other) {
 
     if (size() != other.size()) { return false; }
@@ -117,6 +115,28 @@ template <typename T> bool LinkedList<T>::operator==(LinkedList<T> &other) {
         if (cur->data != cur2->data) {
             return false;
         }
+    }
+
+    return true;
+}
+template <typename T> bool LinkedList<T>::isPalindrome() {
+    
+    Stack<int> stack;
+    Node<T> *cur = head;
+    for (int i = 0; i < size() / 2; ++i) {
+        stack.push(cur->data);
+        cur = cur->next;
+    }
+
+    int i;
+    if (size() % 2 == 0) { i = size() / 2; }
+    else { i = size() / 2 + 1; cur = cur->next; }
+
+    for (; i < size(); ++i) {
+        if (stack.pop() != cur->data) {
+            return false;
+        }
+        cur = cur->next;
     }
 
     return true;
