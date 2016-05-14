@@ -19,14 +19,35 @@ int main() {
     // 2.3 remove node given pointer to it
     // (not previous) - override this element with next
     // remove n-th node from the beginning
-    LinkedList<int> list;
-    list.addFront(4); list.addFront(3); list.addFront(2);
-    list.addFront(1); list.addFront(0);
-    list.show();
+//    LinkedList<int> list;
+//    list.addFront(4); list.addFront(3); list.addFront(2);
+//    list.addFront(1); list.addFront(0);
+//    list.show();
+//
+//    list.remove(3);
+//    list.show();
 
-    list.remove(3);
-    list.show();
+    // 2.4 partition list around x
+    // create 2 lists and then combine them
+//    LinkedList<int> list;
+//    list.addFront(1); list.addFront(3);
+//    list.addFront(5); list.addFront(0);
+//    list.show();
+//
+//    int x = 4;
+//    list.partition(x);
+//    list.show();
 
+    LinkedList<int> list2;
+    srand(0);
+    for (int i = 0; i < 10; ++i) {
+        list2.addFront(rand() % 100);
+    }
+    list2.show();
+
+    int x = 50;
+    list2.partition(x);
+    list2.show();
 
     // 2.5 add 2 LL 7 -> 1 -> 6 and 5 -> 9 -> 2
     // 612 + 295 = 912, 2 -> 1 -> 9

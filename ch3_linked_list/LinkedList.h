@@ -35,6 +35,10 @@ public:
     // remove n-th node from the beginning
     void remove(int n);
 
+    // 2.4 partition list around x
+    // create 2 lists and then combine them
+    void partition (T &);
+
     // 2.5 add 2 LL 7 -> 1 -> 6 and 5 -> 9 -> 2
     // 612 + 295 = 912, 2 -> 1 -> 9
     void sum(LinkedList<T> &list1, LinkedList<T> &list2);
@@ -209,6 +213,43 @@ template <typename T> void LinkedList<T>::remove(int n) {
     delete tmp;
 
 
+}
+
+template <typename T> void LinkedList<T>::partition(T &x) {
+
+    Node<T> *below = nullptr;
+    Node<T> *above = nullptr;
+    Node<T> *bcur, *acur;
+    Node<T> *cur = head;
+
+    while (cur != nullptr) {
+
+        if (cur->data <= x) {
+            if (below == nullptr) {
+                below = cur;
+                bcur = cur;
+            } else {
+                bcur->next = cur;
+                bcur = cur;
+            }
+            cur = cur->next;
+            bcur->next = nullptr;
+        } else {
+            if (above == nullptr) {
+                above = cur;
+                acur = cur;
+            } else {
+                acur->next = cur;
+                acur = cur;
+            }
+            cur = cur->next;
+            acur->next = nullptr;
+        }
+
+    }
+
+    bcur->next = above;
+    head = below;
 }
 
 
