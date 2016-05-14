@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Node.h"
 #include "Stack.h"
+#include <set>
 using namespace std;
 
 
@@ -25,6 +26,9 @@ public:
     void removeFront();
 
     void show();
+
+    // 2.1 remove duplicates using set
+    void removeDup();
 
     // 2.5 add 2 LL 7 -> 1 -> 6 and 5 -> 9 -> 2
     // 612 + 295 = 912, 2 -> 1 -> 9
@@ -159,6 +163,29 @@ template <typename T> void LinkedList<T>::sum(LinkedList<T> &list1, LinkedList<T
     }
     if (carry > 0) {
         addFront(carry);
+    }
+}
+
+template <typename T> void LinkedList<T>::removeDup() {
+
+    if (empty()) { return; }
+
+    set<int> elements;
+    elements.insert(head->data);
+    Node<T> *cur = head;
+    Node<T> *tmp;
+
+    while (cur->next != nullptr) {
+        if (elements.count(cur->next->data) == 1) {
+            // remove element
+            tmp = cur->next;
+            cur->next =cur->next->next;
+            delete tmp;
+            // no cur advance here
+        } else {
+            elements.insert(cur->next->data);
+            cur = cur->next;
+        }
     }
 }
 
