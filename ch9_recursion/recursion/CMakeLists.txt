@@ -3,5 +3,5 @@ project(recursion)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Parents.cpp Parents.h)
+set(SOURCE_FILES main.cpp Parenths.h)
 add_executable(recursion ${SOURCE_FILES})
