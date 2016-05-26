@@ -10,7 +10,7 @@
 
 using namespace std;
 
-class Parenths {
+class Parens {
 public:
 
     void generate(int n) {
@@ -26,7 +26,9 @@ private:
         }
 
         if (left < n && right < n) {
+            // we can always insert left paren if theirs # < n
             generate(acc + "(", left + 1, right, n);
+            // but we can only insert right paren in this case
             if (left > right) {
                 generate(acc + ")", left, right + 1, n);
             }
