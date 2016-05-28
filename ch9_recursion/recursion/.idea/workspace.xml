@@ -12,7 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367b70c6-af99-4a29-8f78-48393027d971" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RobotMove.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ch9_recursion/src/main/java/solutions/AssortedMethods.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ch9_recursion/src/main/java/solutions/Robot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Coins.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" />
@@ -25,6 +27,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/recursion.iml" afterPath="$PROJECT_DIR$/.idea/recursion.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RobotMove.h" afterPath="$PROJECT_DIR$/RobotMove.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="recursion.iws" />
@@ -49,8 +52,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="136">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="2" selection-end-line="36" selection-end-column="51" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -58,13 +61,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RobotMove.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RobotMove.h">
+      <file leaf-file-name="Coins.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Coins.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="339">
+              <caret line="120" column="2" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="2" />
               <folding>
-                <element signature="e#106#124#0" expanded="true" />
+                <element signature="e#0#2#0" expanded="false" />
+                <element signature="e#420#478#0" expanded="false" />
+                <element signature="e#483#1020#0" expanded="false" />
+                <element signature="e#1025#1085#0" expanded="false" />
+                <element signature="e#1335#1385#0" expanded="false" />
+                <element signature="e#1427#1997#0" expanded="false" />
+                <element signature="e#2002#2493#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -85,8 +94,10 @@
         <option value="$PROJECT_DIR$/Parens.h" />
         <option value="$PROJECT_DIR$/MagicIndex.h" />
         <option value="$PROJECT_DIR$/Staircase.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/RobotMove.h" />
+        <option value="$PROJECT_DIR$/Cents.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Coins.h" />
       </list>
     </option>
   </component>
@@ -128,24 +139,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recursion" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recursion" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recursion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -337,7 +331,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4570637" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52216065" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -374,7 +368,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#106#124#0" expanded="true" />
+            <element signature="e#106#124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -402,6 +396,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="e#102#119#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -423,22 +420,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RobotMove.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="e#106#124#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="136">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="2" selection-end-line="36" selection-end-column="51" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RobotMove.h">
+    <entry file="file://$PROJECT_DIR$/Coins.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="339">
+          <caret line="120" column="2" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="2" />
           <folding>
-            <element signature="e#106#124#0" expanded="true" />
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#420#478#0" expanded="false" />
+            <element signature="e#483#1020#0" expanded="false" />
+            <element signature="e#1025#1085#0" expanded="false" />
+            <element signature="e#1335#1385#0" expanded="false" />
+            <element signature="e#1427#1997#0" expanded="false" />
+            <element signature="e#2002#2493#0" expanded="false" />
           </folding>
         </state>
       </provider>

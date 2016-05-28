@@ -60,8 +60,6 @@ private:
         if ((cur.second < finish.second) && offLimitSpots[cur.first][cur.second + 1]) {
             move(make_pair(cur.first    , cur.second + 1));
         }
-
-
     }
 
 };

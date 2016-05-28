@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Parens.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MagicIndex.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RobotMove.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Coins.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Staircase.h" isTestSource="false" />
     </content>
