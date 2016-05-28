@@ -44,10 +44,18 @@ public:
     void represent3() {
         represent3(0, 0, 0, 0, 0);
     }
-
+    void change() {
+        string coinStr("qdnp");
+        change("", coinStr, N);
+    }
 
     int getCount() const {
         return count;
+    }
+
+
+    void setCount(int count) {
+        this->count = count;
     }
 
 private:
@@ -85,6 +93,41 @@ private:
         represent3(p    , n + 1, d    , q    , sum + 5 );
         represent3(p + 1, n    , d    , q    , sum + 1 );
     }
+
+    int getValue(char ch) {
+        switch (ch) {
+            case 'q':
+                return 25;
+            case 'd':
+                return 10;
+            case 'n':
+                return 5;
+            case 'p':
+                return 1;
+            default:
+                return 0;
+        }
+    }
+    void change(string acc, string coinsStr, int sum) {
+
+//        cout << acc << " " << coinsStr << endl;
+
+        if (coinsStr.size() == 1) {
+//            cout << acc << "-" << sum << endl;
+            count++;
+            return;
+        }
+
+        char ch = coinsStr[0];
+        int value = getValue(ch);
+//        cout << ch << " " << value << " " << sum / value << endl;
+        for (int i = sum / value; i >= 0; --i) {
+            change(acc + "-" + to_string(i), coinsStr.substr(1), sum - i * value);
+        }
+    }
+
+
+
 
 };
 
