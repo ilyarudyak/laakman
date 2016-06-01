@@ -42,6 +42,56 @@ public class BoxStack {
             createStackR(stack, boxes2);
         }
     }
+    public static void createStackR2(List<Box> stack, List<Box> boxes, int index) {
+        if (index == boxes.size()) {
+            int height = stackHeight(stack);
+            if (height > maxHeight) {
+                maxHeight = height;
+                maxStack = new ArrayList<Box>(stack);
+            }
+//            show(stack);
+        } else {
+            Box boxToAdd = boxes.get(index);
+            Box lastBox;
+            if (stack.isEmpty()) {
+                lastBox = null;
+            } else {
+                lastBox = stack.get(stack.size() - 1);
+            }
+
+            if (boxToAdd.canBeAbove(lastBox)) {
+                List<Box> stack2 = new ArrayList<Box>(stack);
+                stack2.add(boxToAdd);
+                createStackR2(stack2, boxes, index + 1);
+            }
+            createStackR2(stack, boxes, index + 1);
+        }
+    }
+    public static ArrayList<Box> createStackRSol(Box[] boxes, Box bottom) {
+
+        int max_height = 0;
+        ArrayList<Box> max_stack = null;
+
+        for (int i = 0; i < boxes.length; i++) {
+            if (boxes[i].canBeAbove(bottom)) {
+                ArrayList<Box> new_stack = createStackRSol(boxes, boxes[i]);
+                int new_height = stackHeight(new_stack);
+                if (new_height > max_height) {
+                    max_stack = new_stack;
+                    max_height = new_height;
+                }
+            }
+        }
+
+        if (max_stack == null) {
+            max_stack = new ArrayList<Box>();
+        }
+        if (bottom != null) {
+            max_stack.add(0, bottom);
+        }
+
+        return max_stack;
+    }
 
     // helper method
     private static int stackHeight(List<Box> boxes) {
@@ -73,11 +123,14 @@ public class BoxStack {
         boxes.add(new Box(2, 2, 2));
         boxes.add(new Box(1, 1, 1));
 
-        createStackR(new ArrayList<Box>(), boxes);
+        createStackR2(new ArrayList<Box>(), boxes, 0);
 
-        System.out.println();
+//        System.out.println();
         show(maxStack);
-        System.out.println("maxHeight=" + maxHeight);
+//        System.out.println("maxHeight=" + maxHeight);
+
+        Box[] boxesSol = { new Box(5, 3, 3), new Box(4, 4, 4), new Box(2, 2, 2), new Box(1, 1, 1)};
+        show(createStackRSol(boxesSol, null));
 
     }
 }
