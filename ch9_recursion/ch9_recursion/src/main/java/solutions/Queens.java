@@ -33,7 +33,6 @@ public class Queens {
                 cols[row] = -1;
             }
         }
-
     }
 
     // helper methods
