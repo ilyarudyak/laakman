@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6759d700-4f21-4d25-bef9-15f70792d159" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NextLargest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/build/classes/main/solutions/BoxStack.class" afterPath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/build/classes/main/solutions/BoxStack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/recursion/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch9_recursion/recursion/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/recursion/main.cpp" afterPath="$PROJECT_DIR$/../../ch9_recursion/recursion/main.cpp" />
@@ -37,12 +39,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SetBitField.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SetBitField.java">
+      <file leaf-file-name="NextLargest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/NextLargest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4318182">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-              <folding />
+            <state vertical-scroll-proportion="0.056818184">
+              <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+              <folding>
+                <element signature="method#next2#0;class#NextLargest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -252,7 +256,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2930716224000" />
+        <entry key="$PROJECT_DIR$" value="2930746988000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -347,8 +351,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/SetBitField.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/NextLargest.java" />
       </list>
     </option>
   </component>
@@ -795,6 +800,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SetBitField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1931819">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14204545">
@@ -803,11 +824,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SetBitField.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/NextLargest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4318182">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.056818184">
+          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+          <folding>
+            <element signature="method#next2#0;class#NextLargest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
