@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6759d700-4f21-4d25-bef9-15f70792d159" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/SetBitField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/build/classes/main/solutions/BoxStack.class" afterPath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/build/classes/main/solutions/BoxStack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bits.iml" afterPath="$PROJECT_DIR$/bits.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch9_recursion/ch9_recursion/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/recursion/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch9_recursion/recursion/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch9_recursion/recursion/main.cpp" afterPath="$PROJECT_DIR$/../../ch9_recursion/recursion/main.cpp" />
