@@ -31,12 +31,51 @@ public class SetBitField {
         return res;
     }
 
+    private int buildMask(int i, int j) {
+        return (~0 << (j + 1)) | ~(~0 << i);
+    }
+
+    private int buildMask2(int i, int j) {
+        int mask = 0;
+        int bitval = 1;
+        while (j-- > 1) {
+            mask |= bitval;
+            bitval <<= 1;
+        }
+        System.out.println( Integer.toBinaryString(mask));
+        mask <<= i;
+        return ~mask;
+    }
 
     public static void main(String[] args) {
 
         int n = Integer.parseInt("10000000000", 2);
         int m = Integer.parseInt("10011", 2);
-        SetBitField sbf = new SetBitField(n, m, 2, 6);
-        System.out.println(Integer.toBinaryString(sbf.set()));
+        int i = 2; int j = 6;
+        SetBitField sbf = new SetBitField(n, m, i, j);
+        System.out.println( Integer.toBinaryString(sbf.buildMask2(i, j)) );
+
+//        System.out.println(Integer.toBinaryString(sbf.set()));
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
