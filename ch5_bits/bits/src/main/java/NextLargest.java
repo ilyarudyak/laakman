@@ -4,53 +4,45 @@
 public class NextLargest {
 
     private int N;
-    private int oneCount;
 
     public NextLargest(int n) {
         N = n;
-        countOne();
     }
 
-    public int nextLargest() {
+    // we toggle first 1 (bit i)
+    // and first 0 on some *next* position (> i)
+    public int nextLargestSimple() {
         int n = N;
         n = toggleBit(n, firstSetBit());
         n = toggleBit(n, firstUnSetBit());
         return n;
     }
 
-    public int next2() {
-        String nextStr = "0";
-        for (int i = 0; i < oneCount; i++) {
-            nextStr += "1";
-        }
-
-        for (int i = 1; i < 32 - oneCount; i++) {
-            nextStr += "0";
-        }
-
-        System.out.println(nextStr);
-
-        return Integer.parseInt(nextStr, 2);
+    public int nextLargestFull() {
+        int n = N;
+        n = toggleBit(n, firstSetBit());
+        n = toggleBit(n, firstUnSetBit());
+        return n;
     }
 
     // helper methods
-    private void countOne() {
+    private int countOne(int p) {
+
+        int count = 0;
+
+        // remove bits in n except part before p
         int n = N;
+        n &= (1 << p) - 1;
+
         while (n != 0) {
-            oneCount++;
             n &= (n - 1);
+            count++;
         }
+
+        return count;
     }
     private int toggleBit(int n, int i) {
         n ^= 1 << i;
-        return n;
-    }
-    private int setBit(int n, int i) {
-        n |= 1 << i;
-        return n;
-    }
-    private int unsetBit(int n, int i) {
-        n &= ~(1 << i);
         return n;
     }
     private int firstSetBit() {
@@ -73,9 +65,16 @@ public class NextLargest {
 
     public static void main(String[] args) {
 
-        int N = Integer.parseInt("101010010", 2);
+        int N = Integer.parseInt("101001110", 2);
+        System.out.print("n=" + N + " ");
+        System.out.println( Integer.toBinaryString(N) );
+
         NextLargest nl = new NextLargest(N);
-        System.out.println(nl.nextLargest());
+
+        int p = nl.firstUnSetBit();
+        System.out.println(nl.countOne(p));
+
+
     }
 }
 

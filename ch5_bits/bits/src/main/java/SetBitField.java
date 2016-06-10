@@ -31,10 +31,10 @@ public class SetBitField {
         return res;
     }
 
+    // we build mask to clear fields: 1...10000011
     private int buildMask(int i, int j) {
         return (~0 << (j + 1)) | ~(~0 << i);
     }
-
     private int buildMask2(int i, int j) {
         int mask = 0;
         int bitval = 1;
@@ -46,6 +46,9 @@ public class SetBitField {
         mask <<= i;
         return ~mask;
     }
+    private int buildMask3(int i, int j) {
+        return (~0 << j + 1) | ((1 << i) - 1);
+    }
 
     public static void main(String[] args) {
 
@@ -53,7 +56,7 @@ public class SetBitField {
         int m = Integer.parseInt("10011", 2);
         int i = 2; int j = 6;
         SetBitField sbf = new SetBitField(n, m, i, j);
-        System.out.println( Integer.toBinaryString(sbf.buildMask2(i, j)) );
+        System.out.println( Integer.toBinaryString(sbf.buildMask3(i, j)) );
 
 //        System.out.println(Integer.toBinaryString(sbf.set()));
 
