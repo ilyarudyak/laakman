@@ -5,7 +5,8 @@ apply plugin: 'application'
 
 //mainClassName = "SetBitField"
 //mainClassName = "NextLargest"
-mainClassName = "SwapOddEven"
+//mainClassName = "SwapOddEven"
+mainClassName = "BinaryRep"
 
 repositories {
     mavenCentral()
