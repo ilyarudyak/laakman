@@ -14,8 +14,6 @@
     <list default="true" id="00e8c1b0-d5f8-4956-b060-07cec3380383" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ch2_stack_queue/towers/main.cpp" afterPath="$PROJECT_DIR$/../ch2_stack_queue/towers/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LinkedList.h" afterPath="$PROJECT_DIR$/LinkedList.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="ch3_linked_list.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +37,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="882">
+              <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -51,24 +49,26 @@
       <file leaf-file-name="LinkedList.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LinkedList.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="243" column="28" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
+            <state relative-caret-position="486">
+              <caret line="217" column="58" selection-start-line="217" selection-start-column="58" selection-end-line="217" selection-end-column="58" />
               <folding>
                 <element signature="e#0#2#0" expanded="false" />
+                <element signature="e#237#1099#1" expanded="false" />
                 <element signature="e#3908#4449#0" expanded="false" />
                 <element signature="e#4451#4825#0" expanded="false" />
-                <marker date="1463261403000" expanded="false" signature="1152:1186" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="1238:1294" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="1352:1383" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="1438:1455" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="1520:1592" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="1656:1821" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="1878:1991" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="2042:2283" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="2337:2578" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="2654:2962" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="3020:3443" placeholder="{...}" />
-                <marker date="1463261403000" expanded="false" signature="3535:3906" placeholder="{...}" />
+                <element signature="e#4827#5644#0" expanded="false" />
+                <marker date="1463262845000" expanded="false" signature="1152:1186" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="1238:1294" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="1352:1383" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="1438:1455" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="1520:1592" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="1656:1821" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="1878:1991" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="2042:2283" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="2337:2578" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="2654:2962" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="3020:3443" placeholder="{...}" />
+                <marker date="1463262845000" expanded="false" signature="3535:3906" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -84,8 +84,8 @@
       <list>
         <option value="$PROJECT_DIR$/Node.h" />
         <option value="$PROJECT_DIR$/Stack.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/LinkedList.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -376,20 +376,22 @@
           <caret line="160" column="24" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#237#1099#1" expanded="false" />
             <element signature="e#3908#4449#0" expanded="false" />
             <element signature="e#4451#4825#0" expanded="false" />
-            <marker date="1463261403000" expanded="false" signature="1152:1186" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1238:1294" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1352:1383" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1438:1455" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1520:1592" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1656:1821" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1878:1991" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="2042:2283" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="2337:2578" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="2654:2962" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="3020:3443" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="3535:3906" placeholder="{...}" />
+            <element signature="e#4827#5644#0" expanded="false" />
+            <marker date="1463262845000" expanded="false" signature="1152:1186" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1238:1294" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1352:1383" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1438:1455" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1520:1592" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1656:1821" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1878:1991" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="2042:2283" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="2337:2578" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="2654:2962" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="3020:3443" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="3535:3906" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -424,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="882">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -434,24 +436,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LinkedList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="243" column="28" selection-start-line="243" selection-start-column="28" selection-end-line="243" selection-end-column="28" />
+        <state relative-caret-position="486">
+          <caret line="217" column="58" selection-start-line="217" selection-start-column="58" selection-end-line="217" selection-end-column="58" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#237#1099#1" expanded="false" />
             <element signature="e#3908#4449#0" expanded="false" />
             <element signature="e#4451#4825#0" expanded="false" />
-            <marker date="1463261403000" expanded="false" signature="1152:1186" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1238:1294" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1352:1383" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1438:1455" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1520:1592" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1656:1821" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="1878:1991" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="2042:2283" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="2337:2578" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="2654:2962" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="3020:3443" placeholder="{...}" />
-            <marker date="1463261403000" expanded="false" signature="3535:3906" placeholder="{...}" />
+            <element signature="e#4827#5644#0" expanded="false" />
+            <marker date="1463262845000" expanded="false" signature="1152:1186" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1238:1294" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1352:1383" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1438:1455" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1520:1592" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1656:1821" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="1878:1991" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="2042:2283" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="2337:2578" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="2654:2962" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="3020:3443" placeholder="{...}" />
+            <marker date="1463262845000" expanded="false" signature="3535:3906" placeholder="{...}" />
           </folding>
         </state>
       </provider>

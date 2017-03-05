@@ -32,7 +32,7 @@ int main() {
 //    parenths.generate(3);
 
     // test 9.8 coins
-    Coins coins(1000);
+    Coins coins(100);
     coins.represent2();
     cout << "count=" << coins.getCount() << endl;
     coins.setCount(0);

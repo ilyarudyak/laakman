@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367b70c6-af99-4a29-8f78-48393027d971" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ch9_recursion/src/main/java/solutions/Coins.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/ch2_stack_queue_java/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" afterPath="$PROJECT_DIR$/../../ch2_stack_queue/towers/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../ch3_linked_list/.idea/workspace.xml" />
@@ -24,7 +25,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ch9_recursion/src/main/java/solutions/Robot.java" afterPath="$PROJECT_DIR$/../ch9_recursion/src/main/java/solutions/Robot.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ch9_recursion/src/main/java/solutions/Staircase.java" afterPath="$PROJECT_DIR$/../ch9_recursion/src/main/java/solutions/Staircase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Coins.h" afterPath="$PROJECT_DIR$/Coins.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="recursion.iws" />
@@ -46,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+            <state relative-caret-position="118">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -58,20 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Coins.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Coins.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Coins.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="116" column="20" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
               <folding>
                 <element signature="e#0#2#0" expanded="false" />
                 <element signature="e#420#478#0" expanded="false" />
                 <element signature="e#483#1020#0" expanded="false" />
                 <element signature="e#1025#1085#0" expanded="false" />
-                <element signature="e#1182#1232#0" expanded="false" />
-                <element signature="e#1274#1844#0" expanded="false" />
-                <element signature="e#1849#2340#0" expanded="false" />
-                <element signature="e#2346#2648#0" expanded="false" />
+                <element signature="e#1181#1231#0" expanded="false" />
+                <element signature="e#1341#1911#0" expanded="false" />
+                <element signature="e#1916#2407#0" expanded="false" />
+                <element signature="e#2413#2715#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -94,8 +94,8 @@
         <option value="$PROJECT_DIR$/Staircase.h" />
         <option value="$PROJECT_DIR$/RobotMove.h" />
         <option value="$PROJECT_DIR$/Cents.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Coins.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -329,7 +329,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52216065" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44182825" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -428,29 +428,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Coins.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="252">
+          <caret line="116" column="20" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
           <folding>
             <element signature="e#0#2#0" expanded="false" />
             <element signature="e#420#478#0" expanded="false" />
             <element signature="e#483#1020#0" expanded="false" />
             <element signature="e#1025#1085#0" expanded="false" />
-            <element signature="e#1182#1232#0" expanded="false" />
-            <element signature="e#1274#1844#0" expanded="false" />
-            <element signature="e#1849#2340#0" expanded="false" />
-            <element signature="e#2346#2648#0" expanded="false" />
+            <element signature="e#1181#1231#0" expanded="false" />
+            <element signature="e#1341#1911#0" expanded="false" />
+            <element signature="e#1916#2407#0" expanded="false" />
+            <element signature="e#2413#2715#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

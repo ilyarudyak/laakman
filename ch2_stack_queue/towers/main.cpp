@@ -39,3 +39,14 @@ void towers(int n, stack<int> &start,
     move(start, finish);
     towers(n - 1, temp, finish, start);
 }
+
+
+
+
+
+
+
+
+
+
+
